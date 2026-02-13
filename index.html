@@ -2,6 +2,10 @@
 <html>
   <head>
     <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      
       nav {
         padding:200px 0;
         background-color: rgba(255,0,0,0.5);
@@ -10,21 +14,43 @@
         height: 100vh;
         position: fixed;
         /*border: solid 20px;*/
+        text-align:center;
       }
 
+      nav li {
+        list-style: none;
+      } 
+      
+      nav li a {
+        text-decoration: none;
+      }
+      
+      nav img {
+        width:150px;
+        border-radius:50%;
+     
+        border:solid yellow;
+        border-width:10px;
+      }
+      
+      ul {
+        padding:0;
+      }
+      
       main {
         padding-left: 200px;
            /*border: solid 20px blue;*/
       }
+      
       body {
         margin:0;
       }
 
-      /*section {*/
-      /*  border: black solid 50px;*/
-      /*  padding:50px;*/
-      /*  margin:50px;*/
-      /*}*/
+      section {
+        border: red solid;
+        padding: 10px;
+        height: 200px;
+      }
       
     </style>
   </head>
@@ -32,20 +58,30 @@
   
   <body>
     <nav>
+      <img src="https://raw.githubusercontent.com/teensprogramming/teensprogramming.github.io/refs/heads/master/my_photo.avif">
       <ul>
-        <li>About</li>
-        <li>Experiences</li>
-        <li>Education</li>
-        <li>Skills</li>
-        <li>Interests</li>
-        <li>Awards</li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experiences">Experiences</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#awards">Awards</a></li>
       </ul>
     </nav>
     
     <main>
-      <h1>Napu Sun</h1>
-      <h1>Today is the last class</h1>
-      <p><a href="mailto:teensprogramming@gmail.com">NAME@EMAIL.COM</a></p>
+
+      <section id='about'>
+        <h1>Napu Sun</h1>
+        <p><a href="mailto:teensprogramming@gmail.com">NAME@EMAIL.COM</a></p>
+      </section>
+      
+      <section id='experiences'>Experiences</section>
+      <section id='education'>Education</section>
+      <section id='skills'>Skills</section>
+      <section id='interests'>Interests</section>
+      <section id='awards'>Awards</section>
+
     </main>
     
     
