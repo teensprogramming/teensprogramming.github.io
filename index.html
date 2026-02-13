@@ -1,6 +1,8 @@
 <!doctype html>
 <html>
   <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <style>
       html {
         scroll-behavior: smooth;
@@ -23,6 +25,11 @@
       
       nav li a {
         text-decoration: none;
+        transition:0.5s;
+      }
+      
+      nav li a:hover {
+        color: yellow;
       }
       
       nav img {
@@ -46,6 +53,16 @@
         margin:0;
       }
 
+      #about i {
+        background-color: #545A61;
+        color: white;
+        font-size: 30px;
+        width:50px;
+        height:50px;
+        padding-top:10px;
+        box-sizing:border-box;
+        border-radius:50%;
+      }
       section {
         border: red solid;
         padding: 10px;
@@ -74,6 +91,12 @@
       <section id='about'>
         <h1>Napu Sun</h1>
         <p><a href="mailto:teensprogramming@gmail.com">NAME@EMAIL.COM</a></p>
+        
+        <p>
+          <a href="https://github.com/teensprogramming/teensprogramming.github.io">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </p>
       </section>
       
       <section id='experiences'>Experiences</section>
