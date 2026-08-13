@@ -1,12 +1,18 @@
 <html>
   <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+      body {
+        margin:0;
+      }
+      
       h1 {
         text-align:center;
         font-size: 3em;
         font-family: sans-serif;
         text-transform: uppercase;
       }
+      
       h1 span {
         color: rgb(189, 93, 56);
       }
@@ -15,6 +21,35 @@
         width: 100px;
         height: 100px;
         border-radius: 50%;
+        background-color: white;
+      }
+      
+      aside {
+        background-color: rgb(189, 93, 56);
+        position: fixed;
+        /*100% of viewport height*/
+        height: 100vh;
+        width: 17rem;
+        text-align:center;
+      }
+      
+      aside ul {
+        list-style:none;
+        padding:0;
+      }
+      
+      p i {
+        font-size: 50px;
+      }
+      
+      main {
+        padding-left:17rem;
+        border: solid red 10px;
+      }
+      
+      h3 {
+        font-family: sans-serif;
+        color: #6c757d;
       }
     </style>
   </head>
@@ -31,6 +66,10 @@
       </ul>
     </aside>
     
-    <h1>Napu <span>Sun</span></h1>
+    <main>
+    <h1 class='name'>Napu <span>Sun</span></h1>
+    <h3>655 windermere rd.</h3>
+    <p><i class="fa-brands fa-facebook"></i></p>
+    </main>
   </body>
 </html>
