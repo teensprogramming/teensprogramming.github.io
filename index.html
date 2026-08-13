@@ -3,6 +3,10 @@
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
     }
@@ -15,6 +19,10 @@
     }
 
     h1 span {
+      color: rgb(189, 93, 56);
+    }
+
+    #about p i:hover {
       color: rgb(189, 93, 56);
     }
 
@@ -61,7 +69,8 @@
     }
 
     section {
-      border: solid 10px blue;
+      border: solid 1px blue;
+      padding: 50px;
     }
 
     #skills ul {
@@ -71,9 +80,17 @@
     #skills ul li:before {
       content: '✓';
       display: inline-block;
+      padding-right: 20px;
+    }
 
-      width: 20px;
-      height: 20px;
+    #awards ul {
+      list-style: none;
+    }
+
+    #awards ul li:before {
+      content: '😊';
+      padding-right: 20px;
+
     }
   </style>
 </head>
@@ -82,31 +99,44 @@
   <aside>
     <img src="https://www.teensprogramming.com/images/logo.png">
     <ul>
-      <li>ABOUT</li>
-      <li>EXPERIENCE</li>
-      <li>EDUCATION</li>
-      <li>SKILLS</li>
-      <li>INTERESTS</li>
-      <li>AWARDS</li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#experience">EXPERIENCE</a></li>
+      <li><a href="#education">EDUCATION</a></li>
+      <li><a href="#skills">SKILLS</a></li>
+      <li><a href="#interests">INTERESTS</a></li>
+      <li><a href="#awards">AWARDS</a></li>
     </ul>
   </aside>
 
   <main>
-    <h1 class='name'>Napu <span>Sun</span></h1>
-    <h3>655 windermere rd.</h3>
-    <p><i class="fa-brands fa-facebook"></i></p>
-    <section id='experience'>
-
+    <section id="about">
+      <h1 class='name'>Napu <span>Sun</span></h1>
+      <h3>655 windermere rd.</h3>
+      <p><i class="fa-brands fa-facebook"></i></p>
     </section>
-    <section id='education'></section>
+    <section id='experience'>
+      Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+
+      Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+    </section>
+    <section id='education'>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid commodi doloremque illum, rerum, omnis impedit optio molestiae minus ea voluptas nesciunt saepe laudantium incidunt repellendus! Necessitatibus alias, ratione nisi, ab exercitationem quae cum sequi ea reiciendis, praesentium molestias? Ex quae repellendus odio adipisci blanditiis nostrum recusandae sint rerum sunt accusantium.
+    </section>
     <section id='skills'>
       <ul>
         <li>HTML</li>
         <li>CSS</li>
       </ul>
     </section>
-    <section id='interests'></section>
-    <section id='awards'></section>
+    <section id='interests'>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum eaque aliquid expedita natus laborum dolore, unde ipsa aspernatur sed assumenda esse ullam voluptates nemo facilis rerum iusto impedit alias pariatur cumque accusamus hic ut quae eos. Accusamus perspiciatis, totam, sit eveniet quod, placeat est delectus consectetur facere nulla suscipit modi.
+    </section>
+    <section id='awards'>
+      <ul>
+        <li>CCC top 25%</li>
+        <li>Avg above 80</li>
+      </ul>
+    </section>
   </main>
 
 </body></html>
